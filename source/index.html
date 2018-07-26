@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name = “viewport” content = “width=device-width, initial-scale=1”>
+	<link rel=’preload href=’/css/style.min.css’ as=’style’>
+	<link rel=’preload href=’/fonts/PTC.woff2’ as=’font’>
+	<title>ASalikova - личный сайт с лайфаками, фоточками, блогом и немного об IT</title>
+	<meta name="author" content="Anastasia Salikova">
+	<meta name="description" content="Здесь вы найдете ссылки на классные фоточки, лайфхаки о том, как быстро обработать фото из домашнего архива, создать слайд-шоу, смонтировать видео из отпуска, например. И более профессиональные лайфаки о том, как быстро освоится в Power Point и Excel, подружиться со сводбными табличками, формулами, функциями и упростить себе жизнь (с девизом: 'Excel в каждый дом!'). Ну и... немного об IT. Есть очень много фишек, которые можно применять на практике даже заядлым гуманитариям. А еще есть блог, в котором обо всем и сразу :) Заходите почитать и посмотреть. Буду рада знакомству :)">
+	<meta name="keywords" content="Саликова, Анастасия, фотограф, портфолио, фотографии, свадьбные, фото, детские, портерты, художественные, ню, обработка, Adobe, уроки, Excel, блог, личный, IT, гуманитарий, лайфхаки, фишки, тестирование, ПО">
+
+	<link rel="icon" href="images/browser-icon.png" type="image/x-icon">
+	<!-- don`t use it yet
+	<link rel="apple-touch-icon" href="" type="image/png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<div style="display: none;">
+		<include src="build 1.0/images/sprite.svg"></include>
+	</div>
+	<header class="header">
+		<h1 class="header__heading visually-hidden">Анастасия Саликова</h1>
+		<!--<svg class="header__main-logo" widht="142px" height="35px">
+			<use xlink:href="#icon-logo_asalikova"></use> 
+		</svg> change to png sprite-->
+		<a href="#" class="header__main-logo"><img src="images/logo_asalikova.png" alt="логотип ASalikova"></a>
+		<img class="header__bg-img-header" src="images/bg-img-header.png" alt="фото портрет девушки в высоком ключе">
+		<nav class="header__main-nav">
+			<ul class="header__menu-items">
+				<li class="header__menu-item">фото<br>портфолио</li>
+				<li class="header__menu-item">лайфхаки</li>
+				<li class="header__menu-item">просто об IT</li>
+				<li class="header__menu-item">блог</li>	
+			</ul>
+		</nav>
+	</header>
+	<section class="sect-photo-portfolio">
+		<img class="sect-photo-portfolio__bg-img" src="images/bg-img-photo-portfolio.png" alt="фото портрет девушки в низком ключе">
+		<h2 class="sect-photo-portfolio__heading heading">фото портфолио</h2>
+		<p class="sect-photo-portfolio__description">Мое увлечение фотографией началось 8 лет назад. За эти годы я полюбила: beauty, художественный портрет, свадебное фото, NU ART. Фотография для меня синоним воспоминаний. И я стараюсь, чтобы эти воспоминания приносили удовольсвтие и радость не только сегодня, но и через много, много лет.</p>
+		<div class="sect-photo-portfolio__block">
+			<a class="sect-photo-portfolio__menu on-the-air" href="#">
+				<img class="sect-photo-portfolio__img" src="images/on the air.jpg" alt="девушка на природе">
+			</a>
+			<a class="sect-photo-portfolio__caption" href="#">на природе</a>
+		</div>
+		
+		<div class="sect-photo-portfolio__block">
+			<a class="sect-photo-portfolio__menu studio" href="#">
+				<img class="sect-photo-portfolio__img"  src="images/studio.jpg" alt="девушка в студии">
+			</a>
+			<a class="sect-photo-portfolio__caption" href="#">в студии</a>
+		</div>
+
+		<div class="sect-photo-portfolio__block">
+			<a href="#" class="sect-photo-portfolio__menu wedding">
+				<img class="sect-photo-portfolio__img"  src="images/wedings.jpg" alt="свадебное фото молодожены">
+			</a>
+			<a href="#" class="sect-photo-portfolio__caption">свадьбы</a>
+		</div>
+
+		<div class="sect-photo-portfolio__block">
+			<a href="#" class="sect-photo-portfolio__menu family">
+				<img  class="sect-photo-portfolio__img" src="images/family.jpg" alt="фото семьи с детьми">
+			</a>
+			<a href="#" class="sect-photo-portfolio__caption">семья</a>
+		</div>
+		
+
+		<div class="sect-photo-portfolio__block">
+			<a href="#" class="sect-photo-portfolio__menu childrens">
+				<img  class="sect-photo-portfolio__img" src="images/childrens.jpg" alt="портерт девочки у окна">
+			</a>
+
+			<a href="#" class="sect-photo-portfolio__caption">дети</a>
+		</div>	
+	
+		<a class="sect-photo-portfolio__link-for-all-alboms links-for-all" href="#">все альбомы</a>
+	</section>
+	<section class="lifehaks">
+		<h2 class="lifehaks__hending heading">лайфхаки</h2>
+		<p class="lifehaks__item lifehaks-photo">Основные приемы при работе с фото в программах Lightroom и Photoshop. Корректировка цвета, ретушь, замена деталей и другие практические уроки.</p>
+		<p class="lifehaks__item lifehaks-office">Примеры работы с отчетами в Excel, незаменимые формулы и функции,сводные таблицы. Основы создания презентации в Power Point в связке с таблицами Excel.</p>
+		<p class="lifehaks__item lifehaks-video">Базовые приемы создания слайд-шоу, видео и анимации в программах Adobe Premiere и After Effects</p>
+
+		<a href="#" class="lifehaks__link-for-all-lifehaks links-for-all">все статьи</a>
+	</section>
+
+	<section class="just-about-IT">
+		<h2 class="just-about-IT__hending heading">просто об IT</h2>
+		<p class="just-about-IT__description">Полезные ссылки на статьи о тестировании. Инструменты и практики. Теория хорошо, но практика - лучше! Как внедрить в повседневную жизнь фишки из мира IT. И как во всем этом разобраться, если ты «гумманитарий».</p>
+	</section>
+	<section class="blog">
+		<h2 class="blog__heading heading">Блог</h2>
+		<p class="blog__description">Мнение обо всем: о прочитанных книгах, что стоит посмотреть, куда сходить. И просто болтовня о жизни, работе, мотивации.</p>
+	</section>
+	<section class="feedback-form">
+		<h2 class="feedback-form__hedding hedding">Обратная связь</h2>
+		<form action="post" class="form">
+			<label for="name">Имя*</label>
+ 			<input type="text" class="form__input-name" id="name" placeholder="Анастасия">
+ 			<label for="email">Email*</label>
+ 			<input type="email" class="form__input-email" id="email" placeholder="example@gmail.com">
+			<label for="tel">Телефон</label>
+			<input type="tel" class="form__input-tel" id="tel" placeholder="+7-921-551-77-57">
+			<label for="mess">Сообщение*</label>
+			<textarea name="mess" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+			<button type="submit">отправить</button>
+		</form>
+	</section>
+	<section class="footer">
+		<h2 class="footer__heading heading">Контакты</h2>
+		<p class="footer__contacts">г. Санкт-Петербург,<br>
+			тел. +7-921-551-77-57<br>
+			email: admin@asalikova.ru<br>
+			skype: fotograf.anastasia</p>
+		<p class="footer__social-links">
+			<ul class="footer__social-links">
+				<li class="footer__social-link"><a class="footer__social-icon" href="#" target="blank" aria-label="Фейсбук">facebook</a></li>
+				<li class="footer__social-link"><a class="footer__social-icon"  href="#" target="blank" aria-label="Твиттер">tweeter</a></li>
+				<li class="footer__social-link"><a class="footer__social-icon"  href="#" target="blank" aria-label="Инстаграм">instagram</a></li>
+				<li class="footer__social-link"><a class="footer__social-icon"  href="#" target="blank" aria-label="Телеграм">telegram</a></li>
+			</ul>
+		</p>
+		<p class="footer__copypight"> &copy; Anastasia Salikova 2017-2018</p>
+	</section>
+</body>
+</html>

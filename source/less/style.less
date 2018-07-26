@@ -1,0 +1,63 @@
+@import "blocks/style-fonts.less";
+@import "blocks/variables.less";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.visually-hidden{
+	position:absolute;
+	widht: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow:hidden;
+}
+.header {
+	background-color: @bg-main-color;
+}
+@import "blocks/logo.less";
+
+@import "blocks/bg-header-logo.less";
+
+@import "blocks/header-main-nav.less";
+
+.sect-photo-portfolio {
+	background-color: @bg-black-color;
+	text-align: center;
+}
+@import "blocks/heading.less";
+@import "blocks/sect-photo-portfolio__bg-img.less";
+
+@import "blocks/sect-photo-portfolio__heading.less";
+
+@import "blocks/sect-photo-portfolio__description.less";
+
+@import "blocks/sect-photo-portfolio__block.less";
+
+@import "blocks/links-for-all.less";
+
+.lifehaks {
+	text-align: center;
+	background-color: @white-color;
+}
+
+@import "blocks/lifehaks.less";
+
+@import "blocks/just-about-IT.less";
+
+@import "blocks/blog.less";
+
+@import "blocks/feedback-form.less";
