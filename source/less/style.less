@@ -26,6 +26,10 @@ img {
 	clip: rect(0 0 0 0);
 	overflow:hidden;
 }
+@import "blocks/header.less";
+.header {
+	position: relative;
+}
 
 @import "blocks/logo.less";
 
@@ -46,12 +50,29 @@ img {
 @import "blocks/header-main-nav.less";
 
 .header__main-nav {
+	position: relative;
+	z-index: 1;
 	margin-left: 6%;
 	margin-top: -200px;
 	margin-bottom: 56px;
 }
+
 .header__menu-item {
 	margin-bottom: 20px;
+}
+
+.header__menu-item:last-child {
+	margin-bottom: 0;
+}
+
+.header::after {
+	position:absolute;
+	  content: " ";
+	  display:block;
+	  left:-5%;
+	  bottom:-10px;
+	  transform:rotate(2deg);
+	  width:110%;
 }
 
 .header__menu-item:nth-child(2) {
