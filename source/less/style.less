@@ -70,15 +70,21 @@ img {
 	margin-left: 74px;
 	margin-bottom: 0;
 }
+
+@import "blocks/sect-photo-portfolio.less";
 .sect-photo-portfolio {
 	position: relative;
 	z-index: -2;
-	text-align: center;
-	background-color: @bg-black-color;
 }
-@import "blocks/heading.less";
+
 @import "blocks/sect-photo-portfolio__bg-img.less";
 
+.sect-photo-portfolio__bg-img {
+	position: relative;
+	z-index: 0;
+}
+
+@import "blocks/heading.less";
 @import "blocks/sect-photo-portfolio__heading.less";
 
 @import "blocks/sect-photo-portfolio__description.less";
