@@ -26,22 +26,55 @@ img {
 	clip: rect(0 0 0 0);
 	overflow:hidden;
 }
+
 .header {
+	position: relative;
+	z-index: 6;
 	text-align: center;
 }
 @import "blocks/header-main-logo.less";
 
 .header__logo-link {
+	width: 100%;
+	height: 100%;
 	margin-top: 32px;
 }
+
+@import "blocks/header__bg-img.less";
+
 .header__bg-img {
 	position: relative;
-	z-index: -1;
+	z-index: 0;
+	margin: 0 auto;
 	margin-top: 10px;
 }
 
+@import "blocks/header__main-nav.less";
+
 .header__main-nav {
-	position: relative;
+	position: absolute;
 	z-index: 7;
+	margin-top: -75%;
+	margin-left: 6%;
 }
+
+.header__nav-item:nth-child(2) {
+	margin-left: 20px;
+}
+.header__nav-item:nth-child(3) {
+	margin-left: 40px;
+}
+
+.header__nav-item:last-child {
+	margin-left: 90px;
+}
+
 @import "blocks/line-right.less";
+
+.portfolio {
+	background-color: @bg-black-color;
+	position: relative;
+	z-index: 5;
+}
+
+@import "blocks/media.less";
