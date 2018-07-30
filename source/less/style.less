@@ -10,6 +10,7 @@ body {
 	width: 100%;
 	height: 100%;
 	font-size: 14px;
+	line-height: 1.5;
 	font-family: 'Roboto', Helvetica, sans-serif;
 }
 img {
@@ -46,14 +47,16 @@ img {
 .header__wrap-logo-nav {
 	position: absolute;
 	z-index: 6;
-	top: 33px;
+	top: 20px;
 	height: 100%;
 	width: 100%;
 }
+
+
 @import "blocks/header__main-nav.less";
 
 .header__main-nav {
-	margin-top: 60%;
+	margin-top: 50%;
 	margin-left: 6%;
 }
 
@@ -70,10 +73,15 @@ img {
 
 @import "blocks/line-right.less";
 
+@import "blocks/portfolio.less";
 .portfolio {
-	background-color: @bg-black-color;
 	position: relative;
 	z-index: 5;
 }
 
+@import "blocks/heading.less";
+@import "blocks/portfolio__bg-img.less";
+
+
+@import "blocks/line-left.less";
 @import "blocks/media.less";
