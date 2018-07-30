@@ -27,7 +27,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp serve",
-    "start-mob": "npm run build && gulp serve-mob"
+    "start-mobile": "npm run build && gulp serve-mob"
   },
   "dependencies": {
     "gulp-cheerio": "^0.6.3"
