@@ -1,0 +1,18 @@
+/*portfolio__nav-link*/
+.portfolio__nav-link {
+	display: inline-block;
+	text-decoration: none;
+	color: @white-color;
+	background: black;
+	/* не нравится дизайн
+	&:hover {
+		color: @title-color;
+	}
+	*/
+	&:hover .portfolio__nav-img{
+		opacity: 1;
+	}
+	&:hover .portfolio__nav-description {
+		border: 1px solid @white-color;
+	}
+}

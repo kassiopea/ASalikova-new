@@ -75,19 +75,42 @@ img {
 
 @import "blocks/portfolio.less";
 .portfolio {
+	text-align: center;
 	position: relative;
 	z-index: 5;
 }
 
-@import "blocks/heading.less";
+@import "blocks/titles.less";
+
 @import "blocks/portfolio__bg-img.less";
 
 .portfolio__wrap-nav-item {
 	text-align: center;
 }
-.portfolio__nav-img {
-	width: 75%;
+@import "blocks/portfolio__nav-img.less";
+@import "blocks/portfolio__nav-link.less";
+
+.portfolio__title {
+	margin-top: -60px;
+	margin-left: 60px;
+}
+@import "blocks/descriptions.less";
+.porfolio__description {
+	margin: 0 auto;
+	margin-top: 60px;
+}
+@import "blocks/portfolio__wrap-nav-item.less";
+.portfolio__wrap-nav-item {
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+}
+@import "blocks/portfolio__nav-description.less";
+
+.portfolio__nav-description {
+	margin-top: -6px;
 }
 
 @import "blocks/line-left.less";
 @import "blocks/media.less";
+
