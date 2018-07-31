@@ -1,4 +1,5 @@
 /*lifehacks-description*/
+/*
 .lifehacks-description {
 	position: relative;
 	width: 75%;
@@ -12,7 +13,41 @@
 		left: 0;
 	}
 }
+*/
 
-.lifehacks__photo-description:before {
-	background-image: url(../images/photo_camera.svg);
+.lifehacks__photo-description {
+	width: 75%;
+	position: relative;
+	margin: 0 auto;
+}
+.lifehacks__photo-description::before {
+	content: "";
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 44px;
+	height: 58px;
+	padding-bottom: 20px;
+	background: url(../images/photo-camera-with-a-flash.svg) no-repeat top left;
+}
+
+.lifehacks__office-description::before {
+	content: "";
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 58px;
+	height: 54px;
+	padding-bottom: 20px;
+	background: url(../images/analytics.svg) no-repeat top left;
+}
+.lifehacks__video-description::before {
+	content: "";
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 58px;
+	height: 54px;
+	padding-bottom: 20px;
+	background: url(../images/video_player.svg) no-repeat top left;
 }
