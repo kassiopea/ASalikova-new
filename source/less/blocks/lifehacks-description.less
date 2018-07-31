@@ -1,0 +1,18 @@
+/*lifehacks-description*/
+.lifehacks-description {
+	position: relative;
+	width: 75%;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 44px;
+		height: 58px;
+		top: -60px;
+		left: 0;
+	}
+}
+
+.lifehacks__photo-description:before {
+	background-image: url(../images/photo_camera.svg);
+}
