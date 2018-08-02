@@ -156,7 +156,7 @@
 		<div class="wrap">
 			<h2 class="feedback-form__title titles">Обратная связь</h2>
 			<p class="feedback-form__req"><span>* обязательные поля</span></p>
-			<form class="feedback-form__form" action="post">
+			<form class="feedback-form__form" action="test.php" method="post">
 				<label for="name">Имя*</label>
 				<input type="text" name="name" placeholder="Имя" required>
 				<label for="email">Email*</label>
@@ -165,7 +165,7 @@
 				<input type="tel" name="tel" id="user-phone" placeholder="+7(921)-551-77-57">
 				<label for="message">Сообщение*</label>
 				<textarea name="message" cols="30" rows="10" maxlength="5000" placeholder="Сообщение"></textarea>
-				<button type="submit">Отправить</button>
+				<button class="feedback-form__send-button" type="submit">Отправить</button>
 			</form>
 		</div>
 		
