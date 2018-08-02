@@ -24,6 +24,22 @@
 	<div style="display: none;">
 		<include src="build 1.0/images/sprite.svg"></include>
 	</div>
+	<div class="visually-hidden">
+		<svg width="100" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+     		<style type="text/css">
+        		rect{fill:url(#InstaGradient)}
+      		</style>
+      		<defs>
+	        	<linearGradient id="InstaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+		          <stop offset="5%" stop-color="#78218c" />
+		          <stop offset="50%" stop-color="#9d473c" />
+		          <stop offset="95%" stop-color="#ce8c3c" />
+	        	</linearGradient>
+      		</defs>
+      
+      		<rect width="100" height="50"/>
+    	</svg>
+	</div>
 	<!-- header -->
 	<header class="header line-right">
 
@@ -168,7 +184,49 @@
 				<button class="feedback-form__send-button" type="submit">отправить</button>
 			</form>
 		</div>
-		
+	</section>
+
+	<!-- footer -->
+	<section class="footer">
+		<p class="footer__contacts">
+			г. Санкт-Петербург<br>
+			тел. +7-921-551-77-57<br>
+			email: admin@asalikova.ru<br>
+			skype: fotograf.anastasia
+		</p>
+		<div class="footer__wrap-social-block">
+			<ul class="footer__sosial-links">
+				<li class="footer__social-item">
+					<a href="facebook" class="footer__social-link">
+						<svg class='social-icon-style facebook-style'>
+							<use class="footer__social-icon" xlink:href="#icon-facebook-logo"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="twietter" class="footer__social-link">
+						<svg class='social-icon-style twitter-style'>
+							<use class="footer__social-icon" xlink:href="#icon-twitter-logo"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="insagram" class="footer__social-link">
+						<svg class='social-icon-style instagram-style'>
+							<use class="footer__social-icon insta-icon" xlink:href="#icon-instagram-logo"></use>
+						</svg>
+					</a>
+				</li>
+
+				<li class="footer__social-item">
+					<a href="telegram" class="footer__social-link">
+						<svg class='social-icon-style telegram-style'>
+							<use class="footer__social-icon" xlink:href="#icon-telegram-logo"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</p>
 	</section>
 </body>
 </html>
