@@ -1,0 +1,57 @@
+/*popup*/
+
+.popup {
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  	width: 75%;
+  	height: 15%;
+  	background: #FFF;
+  	padding: 10px 10px;
+  	border-radius: 16px;
+}
+
+.popup__close-button {
+	position: absolute;
+	right: -14px;
+	top: -14px;
+	width: 34px;
+	height: 34px;
+	cursor: pointer;
+	text-indent: -10000px;
+	background: #f0f0f0;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	transition: 0.5s;
+	
+	&:hover {
+		background: @bg-black-color;
+		box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.4),inset 0px 1px 5px 0px rgba(0, 0, 0, 0.67);
+	}
+}
+
+
+.popup__close-button:before, .popup__close-button:after {
+	position: absolute;
+	left: 16px;
+	top: 4px;
+	content: ' ';
+	height: 24px;
+	width: 2px;
+	background-color: @title-color;
+	
+	&:hover {
+		background-color: @white-color;
+	}
+}
+
+.popup__close-button:before {
+	transform: rotate(45deg);
+}
+.popup__close-button:after {
+	transform: rotate(-45deg);
+}
