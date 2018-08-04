@@ -28,24 +28,18 @@
 	<header class="header line-right">
 
 		<h1 class="header__title visually-hidden">Анастасия Саликова</h1>
-		
-		<picture>
+		<div class="header__wrap-bg-img">
+			<picture>
 			<source media="(min-width: 600px)" srcset="images/bg_img_header.png 1x, images/bg_img_header@2x.png 2x, images/bg_img_header@3x.png 3x">
 			<img class="header__bg-img" src="images/bg_img_header_mobile.png" srcset="images/bg_img_header_mobile@2x.png 2x, images/bg_img_header_mobile@3x.png 3x" alt="фото девушки в высоком ключе">
 		</picture>
 
+		</div>
+		
 		<div class="header__wrap-logo-nav">
 
 			<a class="header__logo-link" href="#">
-				<!-- if need png images
-				<picture>
-					<source class="header__logo-img"  media="(min-width: 768px)" srcset="images/logo_asalikova.png 1x, images/logo_asalikova_2x.png 2x">
-					<img  class="header__logo-img" src="images/logo_asalikova_mobile.png" srcset="images/logo_asalikova_mobile_2x.png 2x" alt="логотип ASalikova">
-				</picture>
-				-->
-		
 				<img class="header__logo-img" src="images/logo_asalikova_full.svg" alt="логотип ASalikova">
-					
 			</a>
 
 			<nav class="header__main-nav">
@@ -69,43 +63,40 @@
 
 		<a class="portfolio__titles-link titles-link" href="portfolio"><h2 class="portfolio__title titles">Фото портфолио</h2></a>
 		<p class="porfolio__description descriptions">Мое увлечение фотографией началось 8 лет назад. За эти годы я полюбила: beauty, художественный портрет, свадебное фото, NU ART. Фотография для меня синоним воспоминаний. И я стараюсь, чтобы эти воспоминания приносили удовольсвтие и радость не только сегодня,но и через много, много лет.</p>
-
-		<div class="portfolio__wrap-nav-item">
-			<a class="portfolio__nav-link" href="on-the-air">
-				<img class="portfolio__nav-img" src="images/photo_on_the_air.jpg" srcset="images/photo_on_the_air@2x.jpg 2x, images/photo_on_the_air@3x.jpg 3x" alt="фото девушки на природе">
-				<p class="portfolio__nav-description">На природе</p>
-			</a>
-			
-		</div>
-
-		<div class="portfolio__wrap-nav-item">
-			<a class="portfolio__nav-link" href="studio">
-				<img class="portfolio__nav-img" src="images/photo_studio.jpg" srcset="images/photo_studio@2x.jpg 2x, images/photo_studio@3x.jpg 3x" alt="фото девушки в студии">
-				<p class="portfolio__nav-description">В студии</p>
-			</a>
-		</div>
-
-		<div class="portfolio__wrap-nav-item">
-			<a class="portfolio__nav-link" href="weddings">
-				<img class="portfolio__nav-img" src="images/photo_weddings.jpg" srcset="images/photo_weddings@2x.jpg 2x, images/photo_weddings@3x.jpg 3x" alt="свадебная фотография">
-				<p class="portfolio__nav-description">Свадьбы</p>
-			</a>
-		</div>
-
-		<div class="portfolio__wrap-nav-item">
-			<a class="portfolio__nav-link" href="family">
-				<img class="portfolio__nav-img" src="images/photo_family.jpg" srcset="images/photo_family@2x.jpg 2x, images/photo_family@3x.jpg 3x" alt="фотография семьи">
-				<p class="portfolio__nav-description">Семья</p>
-			</a>
-		</div>
-
-		<div class="portfolio__wrap-nav-item">
-			<a class="portfolio__nav-link" href="children">
-				<img class="portfolio__nav-img" src="images/photo_children.jpg" srcset="images/photo_children@2x.jpg 2x, images/photo_children@3x.jpg 3x" alt="детская фотография">
-				<p class="portfolio__nav-description">Дети</p>
-			</a>
-		</div>
-
+	
+		<ul class="portfolio__nav">
+			<li class="portfolio__nav-item">
+				<a class="portfolio__nav-link" href="on-the-air">
+					<img class="portfolio__nav-img" src="images/photo_on_the_air.jpg" srcset="images/photo_on_the_air@2x.jpg 2x, images/photo_on_the_air@3x.jpg 3x" alt="фото девушки на природе">
+					<p class="portfolio__nav-description">На природе</p>
+				</a>
+			</li>
+			<li class="portfolio__nav-item">
+				<a class="portfolio__nav-link" href="studio">
+					<img class="portfolio__nav-img" src="images/photo_studio.jpg" srcset="images/photo_studio@2x.jpg 2x, images/photo_studio@3x.jpg 3x" alt="фото девушки в студии">
+					<p class="portfolio__nav-description">В студии</p>
+				</a>
+			</li>
+			<li class="portfolio__nav-item">
+				<a class="portfolio__nav-link" href="weddings">
+					<img class="portfolio__nav-img" src="images/photo_weddings.jpg" srcset="images/photo_weddings@2x.jpg 2x, images/photo_weddings@3x.jpg 3x" alt="свадебная фотография">
+					<p class="portfolio__nav-description">Свадьбы</p>
+				</a>
+			</li>
+			<li class="portfolio__nav-item">
+				<a class="portfolio__nav-link" href="family">
+					<img class="portfolio__nav-img" src="images/photo_family.jpg" srcset="images/photo_family@2x.jpg 2x, images/photo_family@3x.jpg 3x" alt="фотография семьи">
+					<p class="portfolio__nav-description">Семья</p>
+				</a>
+			</li>
+			<li class="portfolio__nav-item">
+				<a class="portfolio__nav-link" href="children">
+					<img class="portfolio__nav-img" src="images/photo_children.jpg" srcset="images/photo_children@2x.jpg 2x, images/photo_children@3x.jpg 3x" alt="детская фотография">
+					<p class="portfolio__nav-description">Дети</p>
+				</a>
+			</li>
+		</ul>
+		
 		<a class="portfolio__all-alboms-link link-button" href="portfolio">Все альбомы</a>
 	</section>
 
