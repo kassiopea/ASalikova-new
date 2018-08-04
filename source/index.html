@@ -56,13 +56,22 @@
 	</header>
 	<!-- portfolio -->
 	<section class="portfolio line-left">
-		<picture>
-			<source media="(min-width: 600px)" srcset="images/bg_img_portfolio.png 1x, images/bg_img_portfolio@2x.png 2x, images/bg_img_portfolio@3x.png 3x">
-			<img class="portfolio__bg-img" src="images/bg_img_portfolio_mobile.png" srcset="images/bg_img_portfolio_mobile@2x.png 2x, images/bg_img_portfolio_mobile@3x.png 3x" alt="фото девушки в высоком ключе">
-		</picture>
 
-		<a class="portfolio__titles-link titles-link" href="portfolio"><h2 class="portfolio__title titles">Фото портфолио</h2></a>
-		<p class="porfolio__description descriptions">Мое увлечение фотографией началось 8 лет назад. За эти годы я полюбила: beauty, художественный портрет, свадебное фото, NU ART. Фотография для меня синоним воспоминаний. И я стараюсь, чтобы эти воспоминания приносили удовольсвтие и радость не только сегодня,но и через много, много лет.</p>
+		<div class="portfolio__wrap-img-title">
+			<div class="portfolio__wrap-main-img">
+				<picture>
+					<source media="(min-width: 600px)" srcset="images/bg_img_portfolio.png 1x, images/bg_img_portfolio@2x.png 2x, images/bg_img_portfolio@3x.png 3x">
+					<img class="portfolio__bg-img" src="images/bg_img_portfolio_mobile.png" srcset="images/bg_img_portfolio_mobile@2x.png 2x, images/bg_img_portfolio_mobile@3x.png 3x" alt="фото девушки в высоком ключе">
+				</picture>
+			</div>
+			
+			<div class="portfolio__wrap-title-description">
+				<a class="portfolio__titles-link titles-link" href="portfolio"><h2 class="portfolio__title titles">Фото портфолио</h2></a>
+				<p class="porfolio__description descriptions">Мое увлечение фотографией началось 8 лет назад. За эти годы я полюбила: beauty, художественный портрет, свадебное фото, NU ART. Фотография для меня синоним воспоминаний. И я стараюсь, чтобы эти воспоминания приносили удовольсвтие и радость не только сегодня,но и через много, много лет.</p>
+
+				<a class="portfolio__all-alboms-link portfolio__all-alboms-link--top link-button" href="portfolio">Все альбомы</a>
+			</div>
+		</div>
 	
 		<ul class="portfolio__nav">
 			<li class="portfolio__nav-item">
@@ -97,7 +106,7 @@
 			</li>
 		</ul>
 		
-		<a class="portfolio__all-alboms-link link-button" href="portfolio">Все альбомы</a>
+		<a class="portfolio__all-alboms-link portfolio__all-alboms-link--bottom link-button" href="portfolio">Все альбомы</a>
 	</section>
 
 	<!-- lifehackes -->
