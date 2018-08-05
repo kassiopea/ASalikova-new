@@ -166,18 +166,26 @@
 
 	<!-- feedback form -->
 	<section class="feedback-form">
-		<div class="wrap">
+		<div class="feedback-form__wrap">
 			<h2 class="feedback-form__title titles">Обратная связь</h2>
 			<p class="feedback-form__req"><span>* обязательные поля</span></p>
 			<form class="feedback-form__form" action="test.php" method="post">
-				<label for="name">Имя*</label>
-				<input type="text" name="name" placeholder="Имя" required>
-				<label for="email">Email*</label>
-				<input type="email" name="email" placeholder="example@gmail.com" required>
-				<label for="tel">Телефон</label>
-				<input type="tel" name="tel" id="user-phone" placeholder="+7(921)-551-77-57">
-				<label for="message">Сообщение*</label>
-				<textarea name="message" cols="30" rows="10" maxlength="5000" placeholder="Сообщение"></textarea>
+				<p class="feedback-form__items">
+					<label for="name">Имя*</label><br>
+					<input type="text" id="name" placeholder="Имя" required>
+				</p>
+				<p class="feedback-form__items">
+					<label for="email">Email*</label><br>
+					<input type="email" id="email" placeholder="example@gmail.com" required>
+				</p>
+				<p class="feedback-form__items">
+					<label for="tel">Телефон</label><br>
+					<input type="tel" id="tel" placeholder="+7(921)-551-77-57">
+				</p>
+				<p class="feedback-form__items item-message">
+					<label for="message">Сообщение*</label><br>
+					<textarea id="message" cols="30" rows="10" maxlength="5000" placeholder="Сообщение"></textarea>
+				</p>
 				<button class="feedback-form__send-button" type="submit">отправить</button>
 			</form>
 		</div>
